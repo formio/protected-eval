@@ -1,0 +1,42 @@
+{
+  "name": "@formio/protected-eval",
+  "version": "1.0.0",
+  "description": "Protected eval plugin for form.io",
+  "main": "lib/index.js",
+  "files": [
+    "lib",
+    "dist"
+  ],
+  "scripts": {
+    "watch": "tsc -w",
+    "build": "tsc && webpack",
+    "lint": "eslint .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "pre-commit": [
+    "lint"
+  ],
+  "keywords": [
+    "Form.io",
+    "eval",
+    "protected-eval"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^4.1.1",
+    "@typescript-eslint/parser": "^4.1.1",
+    "eslint": "^7.9.0",
+    "formiojs": "^4.11.3",
+    "typescript": "^4.0.2",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "peerDependencies": {
+    "formiojs": "^4.11.3"
+  },
+  "dependencies": {
+    "js-interpreter": "https://github.com/formio/JS-Interpreter",
+    "lodash": "^4.17.20"
+  }
+}
