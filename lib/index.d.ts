@@ -1,4 +1,3 @@
-import './FormioUtils';
 declare const _default: {
     evaluator: import("./ProtectedEvaluator").IEvaluator;
 };
