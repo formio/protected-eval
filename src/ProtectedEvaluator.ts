@@ -1,31 +1,29 @@
-import FormioEvaluator from 'formiojs/utils/Evaluator';
+import {Utils} from '@formio/core';
 import Interpreter from 'js-interpreter';
 
-const baseEvaluator = FormioEvaluator.evaluator;
-const baseEvaluate = FormioEvaluator.evaluate;
+const baseEvaluator = (Utils.Evaluator as any).evaluator;
+const baseEvaluate = (Utils.Evaluator as any).evaluate;
 
 export interface IEvaluator {
   noeval?: boolean;
-  protectedEval?: boolean;
   evaluator: (func: string | any, ...params: any[]) => () => any;
   evaluate: (func: string | any, args: any, ...rest: any[]) => any;
 }
 
-const excludedVariables = ['instance', 'self'];
+const excludedVariables = ['instance', 'self', 'options'];
 
 const Evaluator: IEvaluator = {
   noeval: true,
-  protectedEval: true,
   evaluator: (func: string | any, ...params: any[]): () => any => {
-    if (!Evaluator.protectedEval) {
+    if (!Evaluator.noeval) {
       return baseEvaluator(func, ...params);
     }
 
-    console.warn('No evaluations allowed for safe eval.');
+    console.warn('No evaluations allowed for protected eval.');
     return () => undefined;
   },
   evaluate: (func: string | any, args: any, ...rest: any[]): any => {
-    if (!Evaluator.protectedEval || typeof func !== 'string') {
+    if (!Evaluator.noeval || typeof func !== 'string') {
       return baseEvaluate(func, args, ...rest);
     }
 
@@ -40,10 +38,10 @@ const Evaluator: IEvaluator = {
         const pseudoValue = interpreter.nativeToPseudo(args[variable]);
         interpreter.setProperty(globalObject, variable, pseudoValue);
       });
-  
+
       interpreter.setProperty(globalObject, 'result', null);
     };
-  
+
     const interpreter = new Interpreter(func, initFunc);
     interpreter.run();
     return interpreter.getProperty(interpreter.globalObject, 'result');

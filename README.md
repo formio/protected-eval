@@ -6,9 +6,9 @@ This plugin makes [formiojs](https://github.com/formio/formio.js) library to use
 
 ```javascript
 import ProtectedEval from '@formio/protected-eval';
-import { Formio } from 'formiojs';
+import { use } from 'formiojs';
 
-Formio.use(ProtectedEval);
+use(ProtectedEval);
 ```
 
 ## Differences with classic eval
@@ -17,3 +17,4 @@ Plugin doesn't allow usage of following variables in custom scripts:
 
 - `instance`
 - `self`
+- `options`
