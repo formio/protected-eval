@@ -5,8 +5,8 @@ This plugin makes [formiojs](https://github.com/formio/formio.js) library to use
 ## Usage
 
 ```javascript
+import { use } from '@formio/core';
 import ProtectedEval from '@formio/protected-eval';
-import { use } from 'formiojs';
 
 use(ProtectedEval);
 ```
