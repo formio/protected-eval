@@ -1,2 +1,2 @@
-import FormioUtils from 'formiojs/utils';
+import { Utils as FormioUtils } from 'formiojs';
 export default FormioUtils;
