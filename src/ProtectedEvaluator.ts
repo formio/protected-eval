@@ -1,8 +1,8 @@
-import FormioEvaluator from 'formiojs/utils/Evaluator';
+import {Utils as FormioUtils} from 'formiojs';
 import Interpreter from 'js-interpreter';
 
-const baseEvaluator = FormioEvaluator.evaluator;
-const baseEvaluate = FormioEvaluator.evaluate;
+const baseEvaluator = FormioUtils.Evaluator.evaluator;
+const baseEvaluate = FormioUtils.Evaluator.evaluate;
 
 export interface IEvaluator {
   noeval?: boolean;

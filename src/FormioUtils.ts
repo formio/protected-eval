@@ -1,11 +1,10 @@
-import FormioUtils from 'formiojs/utils';
-import FormioEvaluator from 'formiojs/utils/Evaluator';
+import {Utils as FormioUtils} from 'formiojs';
 
 import {lodash as _} from './utils/lodash';
 
 const baseEvaluate = FormioUtils.evaluate;
 FormioUtils.evaluate = function evaluate(func, args, ret, tokenize, ...rest) {
-  if (!FormioEvaluator.protectedEval || typeof func !== 'string') {
+  if (!FormioUtils.Evaluator.protectedEval || typeof func !== 'string') {
     return baseEvaluate(func, args, ret, tokenize, ...rest);
   }
 
@@ -36,7 +35,7 @@ FormioUtils.evaluate = function evaluate(func, args, ret, tokenize, ...rest) {
   }
 
   try {
-    returnVal = FormioEvaluator.evaluate(func, args);
+    returnVal = FormioUtils.Evaluator.evaluate(func, args);
   }
   catch (err) {
     console.warn(`An error occured within the custom function for ${componentKey}`, err);
