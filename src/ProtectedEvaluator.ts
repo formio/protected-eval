@@ -46,7 +46,8 @@ const Evaluator: IEvaluator = {
   
     const interpreter = new Interpreter(func, initFunc);
     interpreter.run();
-    return interpreter.getProperty(interpreter.globalObject, 'result');
+    const result = interpreter.getProperty(interpreter.globalObject, 'result');
+    return interpreter.pseudoToNative(result);
   },
 };
 
