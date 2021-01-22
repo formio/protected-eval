@@ -35,7 +35,7 @@ FormioUtils.evaluate = function evaluate(func, args, ret, tokenize, ...rest) {
   }
 
   try {
-    returnVal = FormioUtils.Evaluator.evaluate(func, args);
+    returnVal = FormioUtils.Evaluator.evaluate(func, {...args, _});
   }
   catch (err) {
     console.warn(`An error occured within the custom function for ${componentKey}`, err);
