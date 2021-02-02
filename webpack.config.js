@@ -13,7 +13,10 @@ module.exports = {
   mode: 'production',
   performance: {hints: false},
   plugins: [
-    new webpack.IgnorePlugin(/^\.\/locale$/, /moment$/),
+    new webpack.IgnorePlugin({
+      resourceRegExp: /^\.\/locale$/,
+      contextRegExp: /moment$/
+    }),
   ],
   externals: {
     formiojs: 'Formio',
