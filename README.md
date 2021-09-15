@@ -17,3 +17,5 @@ Plugin doesn't allow usage of following variables in custom scripts:
 
 - `instance`
 - `self`
+
+There is also a performance regression when this library is used. If you have more than 100 calculated values within your form, you will see a noticable performance decrease in the runtime performance of the form.
