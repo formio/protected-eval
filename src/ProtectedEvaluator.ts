@@ -11,7 +11,7 @@ export interface IEvaluator {
   evaluate: (func: string | any, args: any, ...rest: any[]) => any;
 }
 
-const excludedVariables = ['instance', 'self'];
+const excludedVariables = ['instance', 'self', 'options'];
 
 const Evaluator: IEvaluator = {
   noeval: true,
@@ -40,10 +40,10 @@ const Evaluator: IEvaluator = {
         const pseudoValue = interpreter.nativeToPseudo(args[variable]);
         interpreter.setProperty(globalObject, variable, pseudoValue);
       });
-  
+
       interpreter.setProperty(globalObject, 'result', null);
     };
-  
+
     const interpreter = new Interpreter(func, initFunc);
     interpreter.run();
     const result = interpreter.getProperty(interpreter.globalObject, 'result');
