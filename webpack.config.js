@@ -18,6 +18,11 @@ module.exports = {
       contextRegExp: /moment$/
     }),
   ],
+  resolve: {
+    fallback: {
+      vm: require.resolve('vm-browserify')
+    }
+  },
   externals: {
     formiojs: 'Formio',
   },
