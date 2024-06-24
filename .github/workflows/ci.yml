@@ -71,6 +71,7 @@ jobs:
 
   publish:
     needs: build
+    if: github.event.pull_request.base.ref == 'master'
     runs-on: ubuntu-latest
     steps:
       - name: Download build artifact
