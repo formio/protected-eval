@@ -1,4 +1,4 @@
-import {Utils as FormioUtils} from 'formiojs';
+import {Utils as FormioUtils} from '@formio/js';
 
 import {lodash as _} from './utils/lodash';
 
