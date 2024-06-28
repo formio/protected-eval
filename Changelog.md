@@ -1,7 +1,5 @@
 
-## [Unreleased: 1.3.0-rc.1]
-### Changed
- - Increment minor version.
+## [Unreleased: 2.0.0-rc.1]
 
 ## 1.2.2
 ### Fixed
