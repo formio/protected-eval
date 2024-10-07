@@ -1,5 +1,5 @@
 import {Utils as FormioUtils} from 'formiojs';
-import Interpreter from 'js-interpreter';
+import Interpreter from '@formio/js-interpreter';
 
 const baseEvaluator = FormioUtils.Evaluator.evaluator;
 const baseEvaluate = FormioUtils.Evaluator.evaluate;
