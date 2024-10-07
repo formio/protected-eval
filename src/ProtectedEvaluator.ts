@@ -1,9 +1,7 @@
-import {Utils as FormioUtils} from 'formiojs';
+import { JSONLogicEvaluator } from '@formio/core/lib/modules/jsonlogic';
 import Interpreter from 'js-interpreter';
 
-const baseEvaluator = FormioUtils.Evaluator.evaluator;
-const baseEvaluate = FormioUtils.Evaluator.evaluate;
-
+const baseEvaluator = (JSONLogicEvaluator as any).evaluator;
 export interface IEvaluator {
   noeval?: boolean;
   protectedEval?: boolean;
@@ -26,7 +24,7 @@ const Evaluator: IEvaluator = {
   },
   evaluate: (func: string | any, args: any, ...rest: any[]): any => {
     if (!Evaluator.protectedEval || typeof func !== 'string') {
-      return baseEvaluate(func, args, ...rest);
+      return JSONLogicEvaluator.evaluate(func, args, ...rest);
     }
 
     func = `result = (function() {${func}})()`;

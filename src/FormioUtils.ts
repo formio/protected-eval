@@ -1,9 +1,9 @@
-import {Utils as FormioUtils} from 'formiojs';
+import { JSONLogicEvaluator } from '@formio/core/lib/modules/jsonlogic';
 
 import {lodash as _} from './utils/lodash';
 
-const baseEvaluate = FormioUtils.evaluate;
-FormioUtils.evaluate = function evaluate(func, args, ret, tokenize, ...rest) {
+const baseEvaluate = JSONLogicEvaluator.evaluate;
+JSONLogicEvaluator.evaluate = function evaluate(func, args, ret, tokenize, ...rest) {
   if (!FormioUtils.Evaluator.protectedEval || typeof func !== 'string') {
     return baseEvaluate(func, args, ret, tokenize, ...rest);
   }
