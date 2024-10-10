@@ -1,3 +1,6 @@
+## [Unreleased: 1.2.3-rc.2]
+### Changed
+ - FIO-9199: update js-interpreter
 
 ## 1.2.2
 ### Fixed
