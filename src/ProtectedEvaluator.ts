@@ -29,7 +29,7 @@ const Evaluator: IEvaluator = {
       return baseEvaluate(func, args, ...rest);
     }
 
-    func = `result = (function() {${func}})()`;
+    func = `result = (function() { value = ${func}; return value; })()`;
     const initFunc = function(interpreter, globalObject) {
       Object.keys(args).forEach((variable) => {
         // Exclude variables which have circular references
