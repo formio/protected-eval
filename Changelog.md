@@ -1,7 +1,10 @@
-
-## [Unreleased: 1.3.0-rc.1]
+## [Unreleased: 2.0.0-rc.2]
 ### Changed
- - Increment minor version.
+ - Increment major version
+ - Upgrade to latest 5.x renderer
+ - FIO-8506: Gh Action To Publish Protected Eval
+ - FIO-9199: update js-interpreter
+ - fix typescript errors, update dependencies
 
 ## 1.2.2
 ### Fixed
