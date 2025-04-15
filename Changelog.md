@@ -1,4 +1,4 @@
-## [Unreleased: 2.0.0-rc.2]
+## 2.0.0-rc.2
 ### Changed
  - Increment major version
  - Upgrade to latest 5.x renderer
