@@ -1,3 +1,7 @@
+## 2.0.0-rc.3
+### Changed
+ - FIO-9942: assign result value from evaluated function
+
 ## 2.0.0-rc.2
 ### Changed
  - Increment major version
