@@ -24,7 +24,7 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@formio/js": "^5.0.1",
+    "@formio/js": "v5.1.0-dev.6208.59bdd3f",
     "@typescript-eslint/eslint-plugin": "^7.10.0",
     "@typescript-eslint/parser": "^7.10.0",
     "eslint": "^9.3.0",
@@ -33,7 +33,7 @@
     "webpack-cli": "^5.1.4"
   },
   "peerDependencies": {
-    "@formio/js": "^5.0.1"
+    "@formio/js": "v5.1.0-dev.6208.59bdd3f"
   },
   "dependencies": {
     "@formio/js-interpreter": "1.1.0-formio.4",
