@@ -41,12 +41,12 @@
 
 "@formio/bootstrap@v3.0.0-dev.121.085d187":
   version "3.0.0-dev.121.085d187"
-  resolved "https://pkg.form.io/@formio/bootstrap/-/bootstrap-3.0.0-dev.121.085d187.tgz#7cc8c3a62e531b9b508e68d08fa513241c659da6"
+  resolved "https://registry.yarnpkg.com/@formio/bootstrap/-/bootstrap-3.0.0-dev.121.085d187.tgz#7cc8c3a62e531b9b508e68d08fa513241c659da6"
   integrity sha512-V9AgDNTiFuvw0g/+QbUu2e8c061obSInmwn3qjsxkySg1VtpuVO2hrhgS8Lqxa5Q3IKbgmkrbCJGex8GCxNAnA==
 
 "@formio/core@2.5.1-rc.6":
   version "2.5.1-rc.6"
-  resolved "https://pkg.form.io/@formio/core/-/core-2.5.1-rc.6.tgz#9f7e165fc77051c87266a6c3aa9f29e2d0fe7c2c"
+  resolved "https://registry.yarnpkg.com/@formio/core/-/core-2.5.1-rc.6.tgz#9f7e165fc77051c87266a6c3aa9f29e2d0fe7c2c"
   integrity sha512-oT+mAu5hH8CslJXuZM9FSrQUV+RxD3ZQtgKL7RASGsHsdiz3zf7b4eE5LPs0vK+qaYloGTTMKFNs8vXGGNJQkQ==
   dependencies:
     browser-cookies "^1.2.0"
@@ -68,10 +68,10 @@
   dependencies:
     acorn "^8.12.1"
 
-"@formio/js@v5.1.0-dev.6208.59bdd3f":
-  version "5.1.0-dev.6208.59bdd3f"
-  resolved "https://pkg.form.io/@formio/js/-/js-5.1.0-dev.6208.59bdd3f.tgz#f98b42da213b787544c972622f33ffae62a83f57"
-  integrity sha512-2Yig25hyLJqgGJGrBIf/JyhGWqRUvyxJCiaddWq8/fhbuHuWUlibkxUupE/cJ6dUxqqRw5j7R78m6j3e33f2Sw==
+"@formio/js@v5.1.0-dev.6214.89da41f":
+  version "5.1.0-dev.6214.89da41f"
+  resolved "https://registry.yarnpkg.com/@formio/js/-/js-5.1.0-dev.6214.89da41f.tgz#13b69fded69203fa81579fc0af8686aa187e8cfc"
+  integrity sha512-qe+owbEJ+mSF+763t/t3LPg5qYQwD0plvT0CeepR5RKH3WhwrH5WV/l9QjsgtW2BdwzgUfi9ozwefPCag8Vjeg==
   dependencies:
     "@formio/bootstrap" v3.0.0-dev.121.085d187
     "@formio/core" "2.5.1-rc.6"
