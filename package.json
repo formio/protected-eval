@@ -33,7 +33,7 @@
     "webpack-cli": "^5.1.4"
   },
   "peerDependencies": {
-    "@formio/js": "v5.1.0-dev.6214.89da41f"
+    "@formio/js": "5"
   },
   "dependencies": {
     "@formio/js-interpreter": "1.1.0-formio.4",
