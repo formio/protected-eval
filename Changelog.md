@@ -1,3 +1,8 @@
+## [Unreleased: 2.0.0-rc.4]
+### Changed
+ - FIO-9942 protected eval extends default eval new
+ - FIO-9942: update import of DefaultEvaluator class to keep it out of formUtils
+
 ## 2.0.0-rc.3
 ### Changed
  - FIO-9942: assign result value from evaluated function
