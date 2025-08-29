@@ -1,3 +1,7 @@
+## 2.0.0
+### Changed
+ - Official Release
+
 ## 2.0.0-rc.4
 ### Changed
  - FIO-9942 protected eval extends default eval new
