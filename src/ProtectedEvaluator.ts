@@ -1,4 +1,4 @@
-import {Utils as FormioUtils, DefaultEvaluator} from '@formio/js';
+import { Utils as FormioUtils, DefaultEvaluator } from '@formio/js';
 import Interpreter from '@formio/js-interpreter';
 
 const baseEvaluator = FormioUtils.Evaluator.evaluator;
@@ -31,8 +31,13 @@ export class Evaluator extends DefaultEvaluator {
       return baseEvaluate(func, args, ...rest);
     }
 
-    func = `result = (function() { value = ${func}; return value; })()`;
-    const initFunc = function(interpreter, globalObject) {
+    if (func.indexOf(' return ') === -1) {
+      func = `result = (function() { value = ${func}; return value; })()`;
+    }
+    else {
+      func = `result = (function() { ${func} })()`;
+    }
+    const initFunc = function (interpreter, globalObject) {
       Object.keys(args).forEach((variable) => {
         // Exclude variables which have circular references
         if (excludedVariables.indexOf(variable) !== -1) {

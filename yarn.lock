@@ -68,10 +68,10 @@
   dependencies:
     acorn "^8.12.1"
 
-"@formio/js@v5.1.0-dev.6214.89da41f":
-  version "5.1.0-dev.6214.89da41f"
-  resolved "https://registry.yarnpkg.com/@formio/js/-/js-5.1.0-dev.6214.89da41f.tgz#13b69fded69203fa81579fc0af8686aa187e8cfc"
-  integrity sha512-qe+owbEJ+mSF+763t/t3LPg5qYQwD0plvT0CeepR5RKH3WhwrH5WV/l9QjsgtW2BdwzgUfi9ozwefPCag8Vjeg==
+"@formio/js@v5.1.0-dev.6214.fdfb58b":
+  version "5.1.0-dev.6214.fdfb58b"
+  resolved "https://registry.yarnpkg.com/@formio/js/-/js-5.1.0-dev.6214.fdfb58b.tgz#2744c2c9bcb131becedcb0f6d17bbfa2ae7e5b2c"
+  integrity sha512-cGxSfStbH8VPYO59cQgZoMrCuar66xe9NUKC8bp/pQ3tAnKx0fO3c2kfAsK5RIZpDNtHgWlZsyvZHf74ArgHxw==
   dependencies:
     "@formio/bootstrap" v3.0.0-dev.121.085d187
     "@formio/core" "2.5.1-rc.6"
