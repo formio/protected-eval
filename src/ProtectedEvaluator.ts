@@ -31,8 +31,10 @@ export class Evaluator extends DefaultEvaluator {
       return baseEvaluate(func, args, ...rest);
     }
 
+  
     if (func.indexOf(' return ') === -1) {
-      func = `result = (function() { value = ${func}; return value; })()`;
+      const returnedVariable = rest[0] || 'value';
+      func = `result = (function() { var ${returnedVariable}; ${func}; return ${returnedVariable}; })()`;
     }
     else {
       func = `result = (function() { ${func} })()`;
