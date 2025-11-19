@@ -1,4 +1,4 @@
-## [Unreleased: 2.0.1-rc.1]
+## 2.0.1-rc.1
 ### Changed
  - FIO-10822: fixed an issue where evaluations donot work if returned variable is in middle of the custom logic or is not 'value'
  - FIO-10653: Fixed issue where the function declaration may mess up the evaluator if there is a return in the statement
