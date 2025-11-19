@@ -1,12 +1,20 @@
-
-## [Unreleased: 2.1.0-rc.1]
+## [Unreleased: 2.0.1-rc.1]
 ### Changed
+ - FIO-10822: fixed an issue where evaluations donot work if returned variable is in middle of the custom logic or is not 'value'
+ - FIO-10653: Fixed issue where the function declaration may mess up the evaluator if there is a return in the statement
+ - fix this binding in module-scoped variables
+
+## 2.0.0
+### Changed
+ - Official Release
+ - FIO-9942 protected eval extends default eval new
+ - FIO-9942: update import of DefaultEvaluator class to keep it out of formUtils
+ - FIO-9942: assign result value from evaluated function
  - Increment major version
  - Upgrade to latest 5.x renderer
  - FIO-8506: Gh Action To Publish Protected Eval
  - FIO-9199: update js-interpreter
  - fix typescript errors, update dependencies
- - FIO-9942: assign result value from evaluated function
 
 ## 1.2.2
 ### Fixed
