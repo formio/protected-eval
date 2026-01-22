@@ -37,7 +37,7 @@
   },
   "dependencies": {
     "@formio/js-interpreter": "1.1.0-formio.4",
-    "lodash": "^4.17.21",
+    "lodash": "^4.17.23",
     "vm-browserify": "^1.1.2"
   }
 }
