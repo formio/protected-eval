@@ -1,7 +1,8 @@
 {
   "compilerOptions": {
     "target": "es6",
-    "module": "commonjs",
+    "module": "esnext",
+    "moduleResolution": "bundler",
     "preserveConstEnums": true,
     "outDir": "lib",
     "noImplicitAny": false,

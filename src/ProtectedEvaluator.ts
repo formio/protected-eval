@@ -1,4 +1,4 @@
-import { Utils as FormioUtils, DefaultEvaluator } from '@formio/js';
+import {Utils as FormioUtils, DefaultEvaluator} from '@formio/js';
 import Interpreter from '@formio/js-interpreter';
 
 const baseEvaluator = FormioUtils.Evaluator.evaluator.bind(FormioUtils.Evaluator);
@@ -58,6 +58,6 @@ export class Evaluator extends DefaultEvaluator {
     const result = interpreter.getProperty(interpreter.globalObject, 'result');
     return interpreter.pseudoToNative(result);
   };
-};
+}
 
 export default new Evaluator();

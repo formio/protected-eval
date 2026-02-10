@@ -1,6 +1,6 @@
 import {Utils as FormioUtils} from '@formio/js';
 
-import {lodash as _} from './utils/lodash';
+import _ from 'lodash'
 
 const baseEvaluate = FormioUtils.evaluate;
 FormioUtils.evaluate = function evaluate(func, args, ret, tokenize, ...rest) {
