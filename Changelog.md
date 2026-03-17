@@ -1,3 +1,7 @@
+## [Unreleased: 2.0.1-rc.2]
+### Changed
+ - FIO-11157: fix protected-eval enclosed in default object
+
 ## 2.0.1-rc.1
 ### Changed
  - FIO-10822: fixed an issue where evaluations donot work if returned variable is in middle of the custom logic or is not 'value'
