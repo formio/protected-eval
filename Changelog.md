@@ -1,4 +1,4 @@
-## [Unreleased: 2.0.1-rc.2]
+## 2.0.1-rc.2
 ### Changed
  - FIO-11157: fix protected-eval enclosed in default object
 
