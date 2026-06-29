@@ -2,6 +2,12 @@
 
 This plugin makes [formiojs](https://github.com/formio/formio.js) library to use sandboxed eval with custom js-interpreter instead of default eval function.
 
+Official Documentation
+--------------------------
+For the latest documentation, release information, and guides, always refer to the official Form.io Help Documentation available here:
+
+**[https://help.form.io](https://help.form.io/dev/javascript-evaluator/protected-evaluator#how-to-use-the-protected-evaluator)**
+
 ## Usage
 
 ```javascript
