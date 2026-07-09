@@ -6,10 +6,11 @@ module.exports = {
   entry: path.join(path.resolve(__dirname, 'lib'), 'index.js'),
   output: {
     library: {
-      name: 'protected-eval',
+      name: 'ProtectedEval',
       type: 'umd',
       export: 'default'
     },
+    clean: true,
     path: path.resolve(__dirname, 'dist'),
     filename: 'protected-eval.js',
   },
